@@ -1,0 +1,33 @@
+Smartphone Samsung Galaxy S20:899.99:Pantalla de 6.2 pulgadas, 128GB de almacenamiento, 12GB de RAM, cámara principal de 64MP y batería de 4000mAh:0.1:Smartphone
+Tablet Apple iPad Air:599.99:Pantalla de 10.9 pulgadas, 256GB de almacenamiento, 4GB de RAM y batería de 7606mAh:0.05:Tablet
+Periférico Teclado Logitech G Pro:129.99:Teclado mecánico para gaming con iluminación RGB personalizable y conector USB:0:Periferico
+GPU Nvidia GeForce RTX 3080 Ti:1499.99:Tarjeta gráfica con 12GB de VRAM GDDR6X y velocidad de reloj de hasta 1665MHz:0:GPU
+Disco Duro Externo WD My Passport 1TB:69.99:Disco duro externo con conectividad USB 3.2 Gen 1 y capacidad de 1TB:0.15:Disco
+RAM Corsair Vengeance LPX 16GB DDR4 3600MHz:99.99:Módulo de memoria RAM DDR4 de 16GB con frecuencia de 3600MHz:0:RAM
+Ventilador Cooler Master Hyper 212 RGB Black Edition:44.99:Ventilador para CPU con iluminación RGB y diseño de doble torre:0.1:Ventilador
+PSU EVGA Supernova 850 G5:139.99:Fuente de poder de 850W con certificación 80 Plus Gold y garantía de 10 años:0:PSU
+Motherboard ASUS ROG Maximus XIII Hero:549.99:Placa madre para procesadores Intel de 11ª generación con chipset Z590 y conectividad WiFi 6E:0.05:Motherboard:LGA 1200
+HP Victus 16-d1033ns:969.0:Intel Core i7-12700H/16GB/512GB SSD/RTX 3060/16.1'':0.0:PC
+Apple Macbook Air Apple M2:1359.0:M2/8GB/256GB SSD/GPU Octa Core/13.6" Midnight:0.25:PC
+CPU Intel Core i9-11900K:539.99:Procesador de 8 núcleos y 16 hilos con velocidad de reloj base de 3.5GHz y turbo de 5.3GHz:0.2:CPU:LGA 1700
+CPU AMD Ryzen 9 5950X:799.99:Procesador de 16 núcleos y 32 hilos con velocidad de reloj base de 3.4GHz y turbo de 4.9GHz:0.1:CPU:AM4
+CPU Intel Core i5-11600K:264.99:Procesador de 6 núcleos y 12 hilos con velocidad de reloj base de 3.9GHz y turbo de 4.9GHz:0.3:CPU:LGA 1200
+CPU AMD Ryzen 7 5800X:429.99:Procesador de 8 núcleos y 16 hilos con velocidad de reloj base de 3.8GHz y turbo de 4.7GHz:0.1:CPU:AM4
+CPU Intel Core i7-11700K:399.99:Procesador de 8 núcleos y 16 hilos con velocidad de reloj base de 3.6GHz y turbo de 5.0GHz:0.2:CPU:LGA 1200
+MSI MPG B550 Gaming Edge WiFi:189.99:Soporta procesadores AMD Ryzen de 3ra generación:0.1:Motherboard:AM4
+ASUS ROG Strix Z590-E Gaming WiFi 6E:429.99:Soporta procesadores Intel Core de 11va generación:0.05:Motherboard:LGA 1200
+Gigabyte AORUS X570 Master:369.99:Soporta procesadores AMD Ryzen de 2da y 3ra generación:0.15:Motherboard:AM4
+ASRock B560 Steel Legend:129.99:Soporta procesadores Intel Core de 10ma y 11va generación:0.1:Motherboard:LGA 1200
+MSI MAG B550 Tomahawk:174.99:Soporta procesadores AMD Ryzen de 3ra generación:0.05:Motherboard:AM4
+Windows 11 PRO:159.99::0.1:SO
+Ubuntu:0.0:Linux:0.0:SO
+Debian:0.0:Linux:0.0:SO
+Fedora:0.0:Linux:0.0:SO
+Manjaro:0.0:Linux:0.0:SO
+Windows 11 Home:116.99::0.0:PC
+Nfortec Centaurus:38.99:4Pipes ARGB Ventilador CPU 120mm Negro:0.05:Ventilador
+Cooler Master Hyper 212 :54.99:RGB Black Edition:0.1:Ventilador
+Nfortec Atria Kit de Refrigeración Líquida:83.99:ARGB 240mm Blanco:0.15:Ventilador
+MSI MAG CoreLiquid P240 Kit Refrigeración Líquida:106.99:240mm:0.0:Ventilador
+MSI MAG Forge:59.99:100M Cristal Templado USB 3.2 RGB Negra:0.03:Torre
+Asus TUF GAMING Z690-PLUS D4:228.9::0.22:Motherboard:LGA 1700
