@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="codigo.js"></script> <!-- Cargamos el archivo JavaScript con nuestras funciones -->
+    </head>
+    <body>
+        <form name="miFormulario" action="mailto:uo282978@uniovi.es" method="post" enctype="text/plain" target="_blank" autocomplete="off" novalidate> <!-- ReqF1, ReqF2, ReqF3, ReqF4, ReqF5 -->
+            <fieldset> <!-- ReqF6 -->
+                <input type="text" name="nombre" placeholder="Nombre" tabindex="1" oninput="validarInput(this)" onfocus="mostrarAyuda(this)" onblur="ocultarAyuda(this)"> <!-- ReqF18, ReqF19, ReqF22 --> <!-- ReqF7 -->
+                <span id="ayudaNombre" style="display:none">Por favor, ingrese su nombre</span> <!-- ReqF20 -->
+                <input type="password" name="password" placeholder="Contraseña" tabindex="2" oninput="validarInput(this)" onfocus="mostrarAyuda(this)" onblur="ocultarAyuda(this)"> <!-- ReqF18, ReqF19, ReqF22 --><!-- ReqF8 -->
+                <span id="ayudaPassword" style="display:none">Por favor, ingrese una contraseña válida</span> <!-- ReqF20 -->
+                <input type="tel" name="telefono" placeholder="Teléfono" tabindex="3" oninput="validarInput(this)" pattern="\d+" required onfocus="mostrarAyuda(this)" onblur="ocultarAyuda(this)"> <!-- ReqF18, ReqF19, ReqF22 --><!-- ReqF9 -->
+                <span id="ayudaTelefono" style="display:none">Por favor, ingrese un número de teléfono válido</span> <!-- ReqF20 -->
+                <input type="url" name="sitioWeb" placeholder="Sitio Web" tabindex="4" oninput="validarInput(this)" onfocus="mostrarAyuda(this)" onblur="ocultarAyuda(this)"> <!-- ReqF18, ReqF19, ReqF22 --><!-- ReqF10 -->
+                <span id="ayudaSitioWeb" style="display:none">Por favor, ingrese una URL válida</span> <!-- ReqF20 -->
+            </fieldset>
+
+            <fieldset> <!-- ReqF11 -->
+                <legend>Sexo</legend>
+                <input type="radio" name="opcion" value="h" id="hombre" checked>
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="opcion" value="m" id="mujer">
+                <label for="mujer">Mujer</label>
+            </fieldset>
+
+            <fieldset> <!-- ReqF12 -->
+                <legend>Intereses</legend>
+                <input type="checkbox" name="interes1" value="interes1" id="interes1">
+                <label for="interes1">Dejar Comentario/Valoracion</label>
+                <input type="checkbox" name="interes2" value="interes2" id="interes2">
+                <label for="interes2">Proponer material al blog</label>
+            </fieldset>
+            <fieldset> 
+                <label for="colorFavorito">Elige tu color favorito:</label>
+                <input type="color" name="colorFavorito" id="colorFavorito" tabindex="5"> <!-- ReqF13 -->
+            </fieldset> 
+            <fieldset> 
+                <label for="mejor">Elige lo que más te ha gustado del blog:</label>
+                <select name="mejor" tabindex="6"> <!-- ReqF14 -->
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <optgroup label="General">
+                        <option value="opcion1">Contenido</option>
+                        <option value="opcion2">Diseño</option>
+                        <option value="opcion3">Organización</option>
+                        <option value="opcion4">Contenido actualizado</option>
+                    </optgroup>
+                    <optgroup label="Rendimiento">
+                        <option value="opcion5">Tiempo de carga</option>
+                        <option value="opcion6">Rendimiento</option>
+                        <option value="opcion7">Se ve bien en distintos dispositivos</option>
+                        <option value="opcion8">Correcta visualización</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset> 
+                <label for="peor">Elige lo que menos te ha gustado del blog:</label>
+                <select name="peor" tabindex="6"> <!-- ReqF14 -->
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <optgroup label="General">
+                        <option value="opcion1">Contenido</option>
+                        <option value="opcion2">Diseño</option>
+                        <option value="opcion3">Organización</option>
+                        <option value="opcion4">Contenido actualizado</option>
+                    </optgroup>
+                    <optgroup label="Rendimiento">
+                        <option value="opcion5">Tiempo de carga</option>
+                        <option value="opcion6">Rendimiento</option>
+                        <option value="opcion7">Se ve bien en distintos dispositivos</option>
+                        <option value="opcion8">Correcta visualización</option>
+                    </optgroup>
+                </select>
+            </fieldset> 
+            <fieldset> 
+                <label for="file">Seleccione el material que propone para el blog: </label>
+                <input type="file" name="archivo" tabindex="7"> <!-- ReqF15 -->
+            </fieldset> 
+            <fieldset> 
+                <label for="fechaHora">Seleccione su fecha de nacimiento: </label>
+                <input type="datetime-local" name="fechaHora" tabindex="8"> <!-- ReqF16 -->
+            </fieldset> 
+            <input type="submit" value="Enviar" tabindex="9"> <!-- ReqF17 -->
+            <input type="reset" value="Limpiar" tabindex="10"> <!-- ReqF17 -->
+            <button type="button" onclick="cambiarColor('colorFavorito')">Cambiar color</button> <!-- ReqF27 -->
+        </form>
+    </body>
+</html>
+

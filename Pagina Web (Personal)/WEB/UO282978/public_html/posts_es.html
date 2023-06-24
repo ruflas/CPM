@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- ReqI1 -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UO282978</title>
+        <link rel="stylesheet" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="I18n.js"></script>
+         <script src="codigo.js"></script> <!-- Cargamos el archivo JavaScript con nuestras funciones -->
+    </head>
+    <body>
+        <div class="container">
+            <h1>Publicaciones</h1>
+
+            <div class="post">
+                <h2 class="post-title">La magia de la fotografía analógica</h2>
+                <img class="post-image" src="img/pelicula.webp" alt="Fotografía analógica">
+                <p class="post-text">La fotografía analógica sigue siendo popular entre los entusiastas de la fotografía que aprecian el proceso y el resultado de esta técnica. La fotografía analógica requiere una atención meticulosa a los detalles y una gran habilidad para capturar la imagen perfecta.</p>
+            </div>
+            <hr>
+            <div class="post">
+                <h2 class="post-title">El resurgimiento de las cámaras de película fotográfica</h2>
+                <img class="post-image" src="img/CANAE1Film.png" alt="Cámara de película">
+                <p class="post-text">En el mundo digital de hoy, las cámaras de película fotográfica están experimentando un resurgimiento. Las cámaras analógicas ofrecen una experiencia de fotografía única, ya que capturan imágenes con una textura y una profundidad que no se encuentran en las fotos digitales.</p>
+            </div>
+            <hr>
+            <div class="post">
+                <h2 class="post-title">Introducción a la programación de aplicaciones fotográficas</h2>
+                <img class="post-image" src="img/photoshop_lightroom.png" alt="Programación de aplicaciones fotográficas">
+                <p class="post-text">La tecnología y la programación han cambiado la forma en que interactuamos con la fotografía. Las aplicaciones fotográficas permiten a los fotógrafos editar y compartir sus imágenes de manera rápida y eficiente. Aprende cómo comenzar a programar tu propia aplicación fotográfica con este tutorial básico.</p>
+            </div>
+        </div>
+        <h1>Operaciones y formateadores</h1>
+        <form id="inputForm">
+            <label for="number1">Número 1:</label>
+            <input type="number" id="number1"> <!-- ReqI6 -->
+            <br>
+
+            <label for="number2">Número 2:</label>
+            <input type="number" id="number2"> <!-- ReqI6 -->
+            <br>
+
+            <label for="date">Fecha:</label>
+            <input type="date" id="date"> <!-- ReqI7 -->
+            <br>
+
+            <button type="button" onclick="performCalculations()">Calcular</button>
+        </form>
+
+        <div id="results">
+            <p id="decimalResult">Resultado en decimal: </p> <!-- ReqI8 -->
+            <p id="currencyResult">Resultado en moneda: </p> <!-- ReqI9 -->
+            <p id="dateResult">Resultado en fecha: </p> <!-- ReqI10 -->
+        </div>
+        <p class="formatted">Texto con formato según el idioma: Hola, este texto cambiará de estilo dependiendo del idioma seleccionado.</p> <!-- ReqI11 -->
+
+<button onclick="window.changeToEnglish()">Cambiar a inglés</button>
+        <button onclick="window.changeToSpanish()">Cambiar a español</button>
+
+         <script>
+             // Formateador de números decimales (ReqI2)
+           let decimalFormatter = new Intl.NumberFormat('es', {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            });
+
+            // Formateador de moneda (ReqI3)
+            let currencyFormatter = new Intl.NumberFormat('es', {
+                style: 'currency',
+                currency: 'EUR'
+            });
+
+            // Formateador de fecha corta (ReqI4)
+            let shortDateFormatter = new Intl.DateTimeFormat('es', {
+                dateStyle: 'short'
+            });
+
+            // Formateador de fecha larga (ReqI5)
+            let longDateFormatter = new Intl.DateTimeFormat('es', {
+                dateStyle: 'full'
+            });
+        </script>
+  <button onclick="reset()">Reiniciar Valores</button>
+    </body>
+</html>

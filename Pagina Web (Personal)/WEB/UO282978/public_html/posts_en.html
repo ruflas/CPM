@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- ReqI1 -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UO282978</title>
+        <link rel="stylesheet" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="I18n.js"></script>
+         <script src="codigo.js"></script> <!-- Cargamos el archivo JavaScript con nuestras funciones -->
+    </head>
+    <body>
+<div class="container">
+            <h1>Posts</h1>
+
+            <div class="post">
+                <h2 class="post-title">The Magic of Analog Photography</h2>
+                <img class="post-image" src="img/pelicula.webp" alt="Analog photography">
+                <p class="post-text">Analog photography is still popular among photography enthusiasts who appreciate the process and the result of this technique. Analog photography requires meticulous attention to detail and great skill to capture the perfect image.</p>
+            </div>
+            <hr>
+            <div class="post">
+                <h2 class="post-title">The Resurgence of Film Cameras</h2>
+                <img class="post-image" src="img/CANAE1Film.png" alt="Film camera">
+                <p class="post-text">In today's digital world, film cameras are experiencing a resurgence. Analog cameras offer a unique photography experience as they capture images with a texture and depth that are not found in digital photos.</p>
+            </div>
+            <hr>
+            <div class="post">
+                <h2 class="post-title">Introduction to Programming Photo Applications</h2>
+                <img class="post-image" src="img/photoshop_lightroom.png" alt="Programming photo applications">
+                <p class="post-text">Technology and programming have changed the way we interact with photography. Photo applications allow photographers to edit and share their images quickly and efficiently. Learn how to start programming your own photo application with this basic tutorial.</p>
+            </div>
+        </div>
+        <h1>Operations and Formatters</h1>
+        <form id="inputForm">
+            <label for="number1">Number 1:</label>
+            <input type="number" id="number1"> <!-- ReqI6 -->
+            <br>
+
+            <label for="number2">Number 2:</label>
+            <input type="number" id="number2"> <!-- ReqI6 -->
+            <br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date"> <!-- ReqI7 -->
+            <br>
+
+            <button type="button" onclick="performCalculations()">Calculate</button>
+        </form>
+
+        <div id="results">
+            <p id="decimalResult">Decimal result: </p> <!-- ReqI8 -->
+            <p id="currencyResult">Currency result: </p> <!-- ReqI9 -->
+            <p id="dateResult">Date result: </p> <!-- ReqI10 -->
+        </div>
+        <p class="formatted">Formatted text according to language: Hello, this text will change style depending on the selected language.</p> <!-- ReqI11 -->
+
+        <button onclick="window.changeToEnglish()">Change to English</button>
+        <button onclick="window.changeToSpanish()">Change to Spanish</button>
+
+         <script>
+             // Formateador de números decimales (ReqI2)
+           let decimalFormatter = new Intl.NumberFormat('en', {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            });
+
+            // Formateador de moneda (ReqI3)
+            let currencyFormatter = new Intl.NumberFormat('en', {
+                style: 'currency',
+                currency: 'USD'
+            });
+
+            // Formateador de fecha corta (ReqI4)
+            let shortDateFormatter = new Intl.DateTimeFormat('en', {
+                dateStyle: 'short'
+            });
+
+            // Formateador de fecha larga (ReqI5)
+            let longDateFormatter = new Intl.DateTimeFormat('en', {
+                dateStyle: 'full'
+            });
+        </script>
+          <button onclick="reset()">Reset Values</button>
+    </body>
+</html>

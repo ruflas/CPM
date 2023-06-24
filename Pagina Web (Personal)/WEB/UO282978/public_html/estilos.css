@@ -1,0 +1,170 @@
+.importante{ /*ReqC1*/
+    color: red;
+}
+
+#TITULO{ /*ReqC3*/
+    size: 18pt;
+}
+
+body { /* ReqC6 */
+    font-style: normal;
+}
+
+h1, .importante { /* ReqC7 */
+    text-align: center;
+}
+
+p { /* ReqC8 */
+    text-indent: 1.5em;
+    opacity: 0.8;
+}
+
+section > article { /* ReqC10 */
+    margin: 10px;
+    padding: 10px;
+}
+
+img {  /* ReqH16 */
+    width: 200px;
+}
+
+#horario table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    margin-left: 10%;
+}
+
+#horario th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#horario th {
+    background-color: #333;
+    color: #fff;
+}
+
+#horario tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#TITULO {
+  font-size: 18pt;
+}
+
+/* ReqC11: Cambiar colores de los enlaces */
+a:link {
+color: blue;
+}
+
+a:visited {
+color: purple;
+}
+
+a:hover {
+color: red;
+}
+
+/* ReqC12: Primer y último elemento de una lista en negrita, primera letra en mayúsculas y con sombra */
+li:first-child,
+li:last-child {
+font-weight: bold;
+text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+text-transform: capitalize;
+}
+
+/* ReqC13: Borde para la primera letra de los artículos */
+article::first-letter {
+border-top: 2px solid red;
+border-bottom: 2px solid red;
+border-left: 4px solid green;
+border-right: 4px solid green;
+}
+
+/* ReqC14: Primera línea de un párrafo en negrita */
+p::first-line {
+font-weight: bold;
+}
+
+ol { /*ReqC16*/
+  list-style-type: square; /* Viñeta circular */
+}
+
+/* ReqC17: Imagen de viñeta para listas no ordenadas */
+ul {
+list-style-image: url('imagen-vineta.png');
+}
+
+/* ReqC19: Posición del título de las tablas */
+caption {
+text-align: center;
+caption-side: top;
+}
+
+/* ReqC20: Espacios entre las celdas de las tablas */
+table {
+border-collapse: separate;
+border-spacing: 10px;
+}
+body {
+  background-image: linear-gradient(-45deg, #ff7f50, #f08080, #ffff00); /* ReqS15 Lo pongo aqui porque quiero que se aplique a todas los html */
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+   font-family: 'Roboto', sans-serif;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+   flex-direction: column; 
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.post {
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Regla que modifica el formato aplicado a una clase dependiendo del idioma (ReqI17) */
+html[lang="es"] .formatted {
+    color: #1f3d7a;
+    font-style: italic;
+}
+
+html[lang="en"] .formatted {
+    color: #990000;
+    font-style: normal;
+}
+
+.hidden {
+    display: none;
+  }
+
+  #circle {
+    position: absolute;
+    width: 25px; 
+    height: 25px; 
+    background-color: red;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.5; 
+  }

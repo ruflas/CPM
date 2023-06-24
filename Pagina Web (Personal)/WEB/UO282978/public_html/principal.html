@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"><!--ReqH2-->
+        <title>UO282978</title><!--ReqH1-->
+        <meta name="author" content="Juan José Vázquez Prieto"><!--ReqH3-->
+        <meta name="description" content="Página web de Juan José Vázquez Prieto, donde comparto mis intereses y aficiones."><!--ReqH3-->
+        <meta name="keywords" content="Juan José Vázquez Prieto, página web, intereses, informática, fotografía analógica"><!--ReqH3-->
+        <link rel="stylesheet" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="codigo.js"></script> <!-- Cargamos el archivo JavaScript con nuestras funciones -->
+        <style>
+
+            h1 {  /* ReqS2 */
+                font-family: sans-serif;
+                font-size: 14px; /* ReqS4 */
+            }
+            p strong { /* ReqS9 */
+                text-decoration: underline;
+            }
+            body {
+                background-image: linear-gradient(-45deg, #ff7f50, #f08080, #ffff00); /* ReqS15 */
+                background-size: 400% 400%;
+                animation: gradient 10s ease infinite;
+                font-family: 'Roboto', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            /* ReqS18: Posición a todas las listas */
+            ol,
+            ul {
+                position: relative;
+            }
+            /* ReqS22: Establecer prioridades en caso de solapamiento */
+            header {
+                z-index: 4;
+            }
+
+            nav {
+                z-index: 3;
+            }
+
+            section {
+                z-index: 1;
+            }
+
+            aside {
+                z-index: 2;
+            }
+
+            footer {
+                z-index: 5;
+            }
+            /*ReqS21*/
+            .bloque {
+                border: 1px solid black;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            #interes {
+                background-color: rgba(255, 0, 0, 0.1); /* Rojo con opacidad */
+            }
+
+            #content {
+                background-color: rgba(0, 0, 255, 0.1); /* Azul con opacidad */
+            }
+        </style>
+    </head>
+    <body onmouseover="showCircle()" onmousemove="moveCircle(event)" onmouseout="hideCircle()" onkeydown="toggleCircle(event)"> <!--ReqF25,ReqF23-->
+        <header><!--ReqH4-->
+            <h1 id="TITULO" class="importante">Bienvenidos a mi página web</h1><!--ReqS5-->
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="posts_es.html">Posts 🇪🇸</a></li><!--ReqH15-->
+                    <li><a href="posts_en.html">Posts 🇺🇸</a></li><!--ReqH15-->
+                    <li><a href="comentarios.html">Comentarios y Sugerencias</a></li><!--ReqH15-->
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="interes" class="bloque">
+                <article><!--ReqH6-->
+                    <h2>Mis Intereses: La Informática y la Fotografía Analógica</h2>
+                    <p>Desde que era niño, me ha interesado todo lo relacionado con la <strong class="importante">informática</strong><!--ReqH7-->. Me encanta aprender sobre nuevas tecnologías, <strong class="diferente">programación</strong><!--ReqH8--> y diseño web. También soy un apasionado de la <strong class="importante">fotografía analógica</strong>, me encanta experimentar con diferentes cámaras y películas, y revelar mis propias fotos en el cuarto oscuro.</p>
+                    <p>En mi página web, compartiré algunos de mis <strong class="diferente">proyectos de programación</strong>, tutoriales sobre diseño web, y algunos de mis trabajos fotográficos en formato analógico. Espero que te gusten tanto como a mí.</p>
+                    <p><strong class="importante">Definición:</strong><!--ReqH9--> La fotografía analógica es una técnica de fotografía que utiliza cámaras y película para capturar imágenes, y que posteriormente se revelan en un cuarto oscuro. A diferencia de la fotografía digital, la fotografía analógica requiere de un proceso químico para obtener las imágenes.</p>
+                    <p><strong class="diferente">Código de Programación:</strong><!--ReqH10--></p>
+                    <pre>
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Mi Página Web&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Bienvenidos a mi página web&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+                    <p><strong class="importante">Enlaces:</strong></p>
+                    <ul>
+                        <li><a href="https://ruflas.dev" >ruflas</a> <!--ReqH11--> - Mi página web personal</li>
+                        <li><a href="https://www.lomography.com/homes/juan75555" target="_blank">Lomography</a> - Plata
+                            forma en línea para compartir fotos analógicas.</li>
+                        <li><a href="#proyectos">Mis proyectos de programación</a> - Enlace interno a la sección "Mis Proyectos de Programación" en esta misma página.</li>
+                        <li><a href="#fotos">Mis trabajos fotográficos</a> - Enlace interno a la sección "Mis Trabajos Fotográficos" en esta misma página.</li>
+                        <li><a href="mailto:uo282978@uniovi.es?subject=Contacto desde Mi Página Web">Contáctame</a> <!--ReqH14--> - Enlace para enviar un correo electrónico con el asunto "Contacto desde Mi Página Web".</li>
+                    </ul>
+                </article>
+            </div>
+            <div id="content" class="bloque"> <!--ReqH20-->
+                <!-- Aquí van todas las secciones de la página -->
+                <section id="hobbies">  <!--ReqH19-->
+                    <h3>Mis Hobbies</h3>
+                    <p>Me encanta pasar mi tiempo libre haciendo diferentes actividades. Aquí te dejo algunos de mis hobbies favoritos:</p>
+                    <ul>
+                        <li>Ver películas y series de televisión.</li>
+                        <li>Jugar videojuegos (sobretodo shooters).</li>
+                        <li>Sacar muchas fotos 😉</li>
+                    </ul>
+                </section>
+                <section id="asignaturas">
+                    <h3>Asignaturas que Curso</h3>
+                    <p>Estoy cursando 3º año de carrera y estas son algunas de las asignaturas que estoy cursando en la universidad:</p>
+                    <p>Lista <span class="importante">ORDENADA</span>⬇️</p>
+                    <ol> <!--ReqH21--> 
+                        <li>Comunicación Persona Máquina</li>
+                        <li>Tecnologías y Paradigmas de la Programación</li>
+                        <li>Bases de Datos</li>
+                        <li>Ingeniería del Software.</li>
+                        <li>Estructuras de Datos</li>
+                        <li>Configuración y Evaluación de Sistemas</li>
+                        <li>Administración de Sistemas</li>
+                        <li>
+                            Practicas Empresa
+                            <ul> 
+                                <li><!--ReqH22--> 
+                                    Curricular
+                                </li>
+                                <li>
+                                    Extracurricular
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                     <p>Lista <span class="importante">DESORDENADA</span> en una ordenada.⬆️</p>
+                </section>
+                <section id="horario">
+                    <h3>Mi Horario</h3>
+                    <table> <!--ReqH23-->
+                        <tr>
+                            <th></th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                        </tr>
+                        <tr>
+                            <td>8:00 - 10:00</td>
+                            <td>TPP</td>
+                            <td></td>
+                            <td>TPP</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10:00 - 12:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12:00 - 14:00</td>
+                            <td>CPM</td>
+                            <td></td>
+                            <td>CPM</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>16:00 - 18:00</td>
+                            <td>CPM</td>
+                            <td>BD</td>
+                            <td>TPP</td>
+                            <td>BD</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <p>Aquí puedes ver mi horario semanal de clases. Tengo clases de lunes a viernes, y dedico algunas horas al día a estudiar y hacer tareas.</p>
+                </section>
+                <section id="proyectos">
+                    <h3>Proyectos de Programación</h3>
+                    <p>En esta sección, compartiré algunos de mis proyectos de programación:</p>
+                    <ul>
+                        <li><a href="https://github.com/ruflas/Virtual-Assistant-Telegram-Bot" target="_blank">Bot Telegram Python</a> - Un bot de telegram programado con varias librerias de python como pandas o pytorch.</li>
+                        <li><a href="https://github.com/ruflas/ColorTiles-Trabajo-IP" target="_blank">Trabajo ColorTiles</a> - Un juego en java para la asignatura de Introducción a la programación</li>
+                    </ul>
+                </section>
+                <section id="fotos">
+                    <h3>Mis Trabajos Fotográficos</h3>
+                    <p>En esta sección, comparto algunos de mis trabajos fotográficos en formato analógico:</p>
+                    <ul><!--ReqH13-->
+                        <li>
+                            <a href="img/50260016.jpg" target="_blank">
+                                <img src="img/50260016.jpg" alt="Imagen de Brujas Cinestill 400. Haz clic para verla en tamaño completo."> <!--ReqH16--> <!--Mirar tambien estilos.css--> 
+                            </a>
+                            <p>Imagen de Brujas Cinestill 400.</p>
+                            <p>Si la imagen no se puede cargar, haz clic <a href="img/50260016.jpg">aquí</a> para descargarla.</p>
+                        </li>
+                        <li>
+                            <a href="img/50260019.jpg" target="_blank">
+                                <img src="img/50260019.jpg" alt="Imagen de Brujas Cinestill 400. Haz clic para verla en tamaño completo." >
+                            </a>
+                            <p>Imagen de Brujas Cinestill 400.</p>
+                            <p>Si la imagen no se puede cargar, haz clic <a href="img/50260019.jpg">aquí</a> para descargarla.</p>
+                        </li>
+                        <li>
+                            <a href="img/50260034.jpg" target="_blank">
+                                <img src="img/50260034.jpg" alt="Imagen de Bruselas Cinestill 400. Haz clic para verla en tamaño completo." >
+                            </a>
+                            <p>Imagen de Bruselas Cinestill 400.</p>
+                            <p>Si la imagen no se puede cargar, haz clic <a href="img/50260034.jpg">aquí</a> para descargarla.</p>
+                        </li>
+                        <li>
+                            <a href="img/88530011.jpg" target="_blank">
+                                <img src="img/88530011.jpg" alt="Imagen de Madrid Portral 400. Haz clic para verla en tamaño completo." >
+                            </a>
+                            <p>Imagen de Madrid Portral 400.</p>
+                            <p>Si la imagen no se puede cargar, haz clic <a href="img/88530011.jpg">aquí</a> para descargarla.</p>
+                        </li>
+                        <li>
+                            <a href="img/88530025.jpg" target="_blank">
+                                <img src="img/88530025.jpg" alt="Imagen de Madrid Portra 400. Haz clic para verla en tamaño completo." >
+                            </a>
+                            <p>Imagen de Madrid Portra 400.</p>
+                            <p>Si la imagen no se puede cargar, haz clic <a href="img/88530025.jpg">aquí</a> para descargarla.</p>
+                        </li>
+                        <li>
+                            <a href="img/88530026.jpg" target="_blank">
+                                <img src="img/88530026.jpg" alt="Imagen de Madrid Portra 400. Haz clic para verla en tamaño completo." >
+                            </a>
+                            <p>Imagen de Madrid Portra 400.</p>
+                            <p>Si la imagen no se puede cargar, haz clic <a href="img/88530026.jpg">aquí</a> para descargarla.</p>
+                        </li>
+                    </ul>
+                </section>
+                <section id="video">
+                    <h3>¿Qué es la Fotografía Analógica?</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/U-kGhaFhmwA" frameborder="0" allowfullscreen=""></iframe> <!--ReqH12-->
+                </section>
+                <section id="video2">
+                    <h3>Cat Vibing</h3>
+                    <!--ReqH17: Tamaño del video-->
+                    <video width="640" height="360" controls>
+                        <!--ReqH18: Alternativa para el video-->
+                        <source src="vid/catvibing.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </section>
+                <button type="button" onclick="funcionConParametros(document.getElementById('x').value, 1, 0)"><</button> <!-- ReqJ21 -->
+                <input type="number" id="x"> 
+                <button type="button" onclick="funcionConParametros(document.getElementById('x').value, 1, 1)">></button> <!-- ReqJ21 -->
+            </div>
+            <div id="circle" class="hidden"></div>
+            <p>Vuelve al <a href="#">Inicio</a>.</p>
+        </main>
+        <footer>
+            <h5>2023 Juan José Vázquez Prieto</h5><!--ReqH5-->
+        </footer>
+    </body>
+</html>
